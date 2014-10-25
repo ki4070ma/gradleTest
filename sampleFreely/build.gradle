@@ -1,0 +1,15 @@
+task hello {
+	println "hello"
+}
+
+task print10 {
+	for (int i = 0; i < 10; i++) {
+    	println "hello";
+	}
+}
+
+task cmdTest(type:Exec) {
+	executable "ls"
+	args "-a", "-l"
+}
+
